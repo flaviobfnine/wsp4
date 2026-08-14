@@ -347,57 +347,6 @@
 
 
 
-<!-- Meta Pixel Code Oficial BFNINE (Pixel ID: 833766893782097) -->
-    <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    
-    fbq('init', '833766893782097');
-    fbq('track', 'PageView');
-    fbq('track', 'ViewContent', { 
-        content_name: 'Workshop Fabricação Esportiva Sublimador A4',
-        content_category: 'Workshop Ao Vivo',
-        value: 19.00,
-        currency: 'BRL'
-    });
-    </script>
-    
-    <!-- Rastreamento de Scroll Suave (Scroll_60 e Scroll_95) -->
-    <script>
-    (function() {
-        let scroll60Fired = false;
-        let scroll95Fired = false;
-
-        function checkScrollDepth() {
-            if (typeof fbq === 'undefined') return;
-            let winHeight = window.innerHeight || document.documentElement.clientHeight;
-            let docHeight = document.documentElement.scrollHeight;
-            let scrollTop = window.scrollY || document.documentElement.scrollTop;
-            if (docHeight - winHeight <= 0) return;
-            let scrollPercent = (scrollTop / (docHeight - winHeight)) * 100;
-
-            if (scrollPercent >= 60 && !scroll60Fired) {
-                scroll60Fired = true;
-                fbq('trackCustom', 'Scroll_60', { page: 'workshop-sublimador-a4', depth: '60%' });
-            }
-            if (scrollPercent >= 95 && !scroll95Fired) {
-                scroll95Fired = true;
-                fbq('trackCustom', 'Scroll_95', { page: 'workshop-sublimador-a4', depth: '95%' });
-            }
-        }
-
-        window.addEventListener('scroll', checkScrollDepth, { passive: true });
-        document.addEventListener('DOMContentLoaded', checkScrollDepth);
-    })();
-    </script>
-    <!-- End Meta Pixel Code -->
-
     <!-- Pixel X App - START -->
     <script type='text/javascript'>
     !function(){var e=window.location.href,t=document.title,n=Date.now(),o=document.createElement('script');o.src='https://pxa.bfninecamisetas.com.br/remote?url='+encodeURIComponent(e)+'&title='+encodeURIComponent(t)+'&time='+n,o.async=!0,document.head.appendChild(o)}()
